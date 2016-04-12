@@ -1,0 +1,11 @@
+Title: 
+    Using Message Queue to Build Scalable and Highly Available System
+Abstract:
+    In this presentation, i will introduce about rubichat.com, a realtime communication service
+    and the solution using RabbitMQ to make it easy to scale out and highly available.
+    I will also discuss about how to apply this solution to some specific systems.
+Final abstract:
+    In this presentation, i will introduce rubichat.com, a realtime communication service 
+    as well as the method to scale out and to make the system highly available.
+    I will also discuss the ability to apply the proposed method to other distributed systems in general.
+

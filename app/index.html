@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" ng-app="slideApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Using Message Queue to Build Scalable and Highly Available System</title>
+        <link rel="stylesheet" href="style/app.css"/>
+
+        <script src="library/angular/angular.js"></script>
+        <script src="library/angular/angular-route.js"></script>
+        <script src="script/app.js"></script>
+        <script src="script/services.js"></script>
+        <script src="script/controllers.js"></script>
+        <script src="script/filters.js"></script>
+        <script src="script/directives.js"></script>
+
+
+        <!-- REVEAL -->  
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+        <link rel="stylesheet" href="library/reveal/css/reveal.min.css">
+        <link rel="stylesheet" href="library/reveal/css/theme/night.css" id="theme">
+        <link rel="stylesheet" href="library/reveal/lib/css/zenburn.css">
+        <style type="text/css">
+            a{
+                cursor: pointer;
+            }
+        </style>
+
+        <script src="library/jquery.min.js"></script>
+
+        <script src="library/reveal/lib/js/head.min.js"></script>
+        <script src="library/reveal/js/reveal.min.js"></script>
+        <script type="text/javascript">
+            var __rb = { };
+            __rb.lc = "license-giaybac.com";
+            function installRubiChat() {
+                ( function() {
+                    var element = document.createElement( 'script' );
+                    element.type = 'text/javascript';
+                    element.async = true;
+                    element.src = ( 'https:' == document.location.protocol ? 'https://' : 'http://' ) + 'rubichat.com/bootstrap';
+                    var script = document.getElementsByTagName( 'script' )[0];
+                    script.parentNode.insertBefore( element, script );
+                } )();
+                document.getElementById( "uninstall_button" ).setAttribute( "style", "" );
+                document.getElementById( "install_button" ).setAttribute( "style", "display: none" );
+            }
+            ;
+            function uninstallRubiChat() {
+                window.location.reload();
+            }
+            ;
+        </script>
+        <script src="script/start.js"></script>
+    </head>
+    <body style="position: relative;">
+        <div class="reveal" ng-controller="SlideController">
+            <div class="slides">
+                <section ng-repeat="page in pages" ng-include="'partials/' + page">                                        
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

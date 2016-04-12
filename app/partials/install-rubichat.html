@@ -1,0 +1,20 @@
+<h2>Install rubiChat</h2>
+<div>
+    <span>Add this script into your website:</span>
+    <pre><code data-trim contenteditable="" style="font-size: 18px; margin-top: 20px;" >
+var __rb = {};
+__rb.lc = "license-giaybac.com";
+(function() {
+    var element = document.createElement('script');
+    element.type = 'text/javascript';
+    element.async = true;
+    element.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'rubichat.com/bootstrap';
+    var script = document.getElementsByTagName('script')[0];
+    script.parentNode.insertBefore(element, script);
+})();
+</code></pre>
+	<!--
+    <a id="install_button" onclick="installRubiChat()">$ install</a>
+    <a id="uninstall_button" onclick="uninstallRubiChat()" style="display: none">$ uninstall</a>
+	-->
+</div>
